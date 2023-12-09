@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bemarking</title>
+        <link rel="shortcut icon" href="{% static './assets/img/icono.png' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="{% static '.assets/fontawesome-free-6.4.2-web/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/1-header.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/8-api_proyecto.css' %}">
+        <script src="{% static './JS/index.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <header id="inicio" class="header3">
+
+                <div class="menu">
+                    <a href="#inicio" class="logo container">Bemarking</a>
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <img src="{% static './assets/img/menu.png' %}" alt="" class="menu-icono">
+                    </label>
+                    <nav class="navbar container">
+                        <ul>
+                            <li><a href="{% url 'index' %}"  class="enlaces-menu">Inicio</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Producto</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Servicios</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Contacto</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Store</a></li>
+                            
+                            <li><a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/nicoferreiro1/" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/nicolas.ferreiro.79/" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </header>
+            
+            <section class="store_create">
+                <div class="creat">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{form.as_div}}
+                        <input type="submit" value="{{ tipo}}" />
+                    </form>
+
+                    <a href="{% url 'store:all' %}">Volvamos al inicio</a>
+                </div>
+            </section>
+    </body>
+</html>
+
+{% endblock %}

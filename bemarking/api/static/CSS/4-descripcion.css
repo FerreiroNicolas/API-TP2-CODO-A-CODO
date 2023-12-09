@@ -1,0 +1,256 @@
+@import url(/CSS/3-servicios.css);
+
+
+.descripcion{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.98)
+    ),
+    url(/assets/img/Descripcion/cool-simple-honeycomb-pattern-4hkt9nveyk2fgopx.jpg);
+    background-size: cover;
+}
+
+.description{
+    height: 90vh;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    margin-top: 90px;
+    align-items: center;
+}
+
+.parte-one{
+    text-align: justify;
+    margin: 80px 0 90px 0;
+    width: 300em;
+    flex-wrap: wrap;
+}
+
+.parte-one h1{
+    margin-top: 100px;
+    font-size: 22px;
+    margin-bottom: 60px;
+    color: rgb(245, 245, 245);
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.parte-two{
+    text-align: justify;
+    margin: 20px 0 100px 0;
+    width: 300em;
+
+}
+
+.parte-two h1{
+
+    font-size: 22px;
+    color: rgb(233, 230, 230);
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+
+.elegirnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elegirnos-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.elegirnos-title h1{
+    border-bottom: 2px solid #FFB500;
+}
+
+.elegirnos-cajas{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.elegirnos-cajas h1{
+    font-size: 50px;
+    color: #FFB500;
+}
+.elegirnos-cajas h6{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+@media(max-width:835px){
+    .description{
+        
+    }
+    .description .parte-one{
+        margin-left: 50px; 
+    }
+    .description .parte-one h1{
+        font-size: 15px;
+    }
+    .description .parte-one img{
+        margin-top: 0px; 
+    }
+    .description .parte-two{
+        margin-right: 50px;
+    }
+
+    .description .parte-two h1{
+        font-size: 15px;
+    }
+    .description .parte-two img{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:1500px){
+    .description .parte-one{
+        margin-left: 50px; 
+    }
+    .description .parte-two{
+        margin-right: 50px;
+    }
+}
+
+@media(max-width:630px){
+    .description{
+        display: flex;
+        flex-wrap:wrap;
+        height: 100%;
+        gap: 0;
+    }
+    .description .parte-one{
+        margin-right: 50px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .description .parte-one h1{
+        font-size: 20px;
+    }
+    
+    .description .parte-one img{
+        display: none;
+    }
+
+    .description .parte-two{
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
+    .description .parte-two h1{
+        font-size: 20px;
+    }
+    .description .parte-two img{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:422px){
+    .description{
+        display: flex;
+        flex-wrap:wrap;
+        height: 100%;
+        gap: 0;
+    }
+    .description .parte-one{
+        margin-right: 50px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .description .parte-one h1{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .description .parte-one img{
+        display: none;
+    }
+
+    .description .parte-two{
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
+    .description .parte-two h1{
+        font-weight: 100;
+        font-size: 18px;
+    }
+    .description .parte-two img{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:1240px){
+    .elegirnos{
+        margin: 20px;
+    }
+}
+
+@media(max-width:1090px){
+    .elegirnos{
+        margin: 0px;
+    }
+
+    .elegirnos-title{
+        font-size: 20px;
+    }
+    .elegirnos-cajas{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .elegirnos-cajas  h1{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .elegirnos-cajas h6{
+        font-size: 15px;
+    }
+}
+@media(max-width:610px){
+    .elegirnos-title{
+        font-size: 16px;
+        text-align: center;
+        margin: 30px ;
+    }
+    .elegirnos-cajas{
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+@media(max-width:430px){
+    .elegirnos-title{
+        text-align: center;
+        font-size: 16px;
+        margin: 30px ;
+    }
+    .elegirnos-cajas{
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 30px;
+    }
+    .elegirnos-cajas  h1{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .elegirnos-cajas h6{
+        font-size: 18px;
+    }
+}

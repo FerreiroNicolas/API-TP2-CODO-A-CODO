@@ -1,0 +1,461 @@
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bemarking</title>
+        <link rel="shortcut icon" href="{% static './assets/img/icono.png' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="{% static '.assets/fontawesome-free-6.4.2-web/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/1-header.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/2-producto-slider.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/3-servicios.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/4-descripcion.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/5-consultas.css' %}">
+        <link rel="stylesheet" href="{% static '/CSS/6-carrousel-aplicaciones.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/7-footer.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/8-api_proyecto.css' %}">
+        <script src="{% static './JS/index.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+
+        <header id="inicio" class="header">
+            <video autoplay  loop  muted class="back-video">
+                <source src="{% static './assets/img/fg.mp4' %}" type="video/mp4">
+            </video>
+            <span class="loader"></span>
+            <div class="menu">
+                <a href="#inicio" class="logo container">Bemarking</a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="{% static './assets/img/menu.png' %}" alt="" class="menu-icono">
+                </label>
+                <nav class="navbar container">
+                    <ul>
+                        <li><a href="#inicio"  class="enlaces-menu">Inicio</a></li>
+                        <li><a href="#produccion" class="enlaces-menu">Producto</a></li>
+                        <li><a href="#servicios" class="enlaces-menu">Servicios</a></li>
+                        <li><a href="#consultas" class="enlaces-menu">Contacto</a></li>
+                        <li><a href="{% url 'store:all' %}" class="enlaces-menu">Empresas</a></li>
+                        
+                        <li><a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/nicoferreiro1/" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/nicolas.ferreiro.79/" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1> <span>Marketing digital</span>  <br>POTENCIA TU EMPRESA</h1>
+                    <p>
+                        Tu pagina es la forma en que tus clientes ven tu negocio. 
+                        Es la forma en la que te representas: profesional, social y visualmente. 
+                        Es lo que te hace único. Es lo que te hace deseable. 
+                        El marketing digital te ayudará a crecer exponencialmente.
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <a href="#consultas" class="btn-1"><p>Comenzar</p></a>
+                </div>
+            </div>
+
+           
+            
+            
+
+
+        </header>
+        <main class="main">
+            <section id="produccion" class="espaciado">  
+            </section>
+
+            <section  class="title">
+                <div>
+                    <h1><span>BEMARKING</span>, TU AGENCIA DE CONFIANZA</h1>
+                    <p>TRABAJEMOS JUNTOS Y HAGAMOS CRECER TU EMPRESA</p>
+                </div>
+            </section>
+            
+            <section class="texto-principal container">
+                <div class="imagen">
+                    <img src="{% static './assets/img/Producto/desarrollo-de-la-estrategia-de-marketing-de-exito-concepto-hdyw2c.jpg' %}" alt="">
+                </div>
+                <div class="parrafo">
+                    <p>Somos una <span>Agencia de Marketing Digital</span> ubicada en Buenos Aires, Argentina. Nuestros servicios no solo abarcan asesoramiento publicitario, sino que también cubrimos todas las áreas necesarias para convertir y potenciar tu marca:</p>
+                    <ul class="propuestas">
+                        <li>Generamos identidad y te brindamos un estilo único para diferenciarte del resto.</li>
+                        <li>Expandimos el alcance de tus canales de venta con campañas de Google AdWords, y fidelizamos y captamos nuevas oportunidades mediante email marketing orgánico.</li>
+                        <li>Producimos videos y contenido audiovisual para que tu empresa salte al primer nivel.</li>
+                    </ul>
+                    
+                </div>
+            </section>
+
+            <section  class="contenedor-principal">
+                <section class="slider container">
+
+
+                    <div class="slider-frame">
+                       <ul>
+                            <li><img src="{% static './assets/img/Slider/1.png' %}" alt=""></li>
+                            <li><img src="{% static './assets/img/Slider/2.png' %}" alt=""></li>
+                            <li><img src="{% static './assets/img/Slider/3.png' %}" alt=""></li>
+                            <li><img src="{% static './assets/img/Slider/4.png' %}" alt=""></li>
+                        </ul>
+                    </div>
+
+                    
+                </section>    
+            </section>
+
+
+            <section id="servicios"  class="espaciado">  
+            </section>
+
+            <section  class="inter container">
+                <div  class="intermedio">
+                    <h4>¿Qué podemos hacer por tu compañía?</h4>
+                    <p>Estamos preparados para cubrir el 360° del negocio, abarcando todas <br>las áreas necesarias para llevar tu negocio a la cima.</p>
+
+                </div>
+            </section>
+
+            <section class="API_Proyecto">
+
+
+            </section>
+            <!--
+                <section class="tarjetas">
+                <div class="contanador container">
+                    <div class="card">
+                        <div class="lines1"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/Estrategias.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>ESTRATEGIAS</h2>
+                                <p>Pensamos y ejecutamos estratégicamente.
+                                Nuestras acciones serán
+                                siempre pensadas y orientadas a los objetivos de
+                                nuestros clientes.</p>
+                                <a href="#indicador">+ INFO</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="lines2"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/SEO.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>SEO</h2>
+                                <p>Trabajamos el posicionamiento
+                                    orgánico a través de nuestro equipo
+                                    de redactores: creación de
+                                    contenido y de
+                                    campañas publicitarias.</p>
+                                <a href="#indicador">+ INFO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="lines3"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/Adwords.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>ADWORDS</h2>
+                                <p>Manejamos todas las plataformas
+                                    publicitarias: nuestro principal objetivo
+                                    es maximizar la inversión de nuestros
+                                    clientes.</p>
+                                <a href="#indicador">+ INFO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="lines4"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/Audiovisual.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>PRODUCCION AUDIOVISUAL</h2>
+                                <p>Creamos, editamos y
+                                    potenciamos todo lo
+                                    necesario para convencer a 
+                                    la mayor cantidad de clientes.</p>
+                                <a href="#indicador">+ INFO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="lines5"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/Diseno grafico.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>DISEÑO GRAFICO</h2>
+                                <p>Podemos crear y diseñar
+                                    piezas gráficas de todo tipo para
+                                    redes sociales, e-books, y lo que se necesite
+                                    llevar adelante de la mano del
+                                    diseño.</p>
+                                <a href="#indicador">+ INFO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="lines6"></div>
+                        <div class="imgBx">
+                            <img src="{% static 'assets/img/Servicios/Desarrollo web.png' %}" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="details">
+                                <h2>DESARROLLO WEB</h2>
+                                <p>Combinamos estética con
+                                    funcionalidad, siempre pensando en la
+                                    operatividad y la experiencia de
+                                    usuario.</p>
+                                <a href="#indicador">+ INFO</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            -->
+            
+
+            
+            <section class="descripcion">
+                <div class="description container">
+                    <div class="parte-one">
+                        <h1>
+                            Ofrecemos una amplia gama de servicios de marketing digital, desde campañas de Google Ads hasta publicidad en las redes sociales más destacadas como Facebook e Instagram. Podemos ayudarte a aumentar tu visibilidad en línea, mejorar tu presencia digital e impulsar el tráfico de tu sitio web.
+                        </h1>
+                        <img src="{% static '/assets/img/Descripcion/42e78ee3dee81e9d6e3b02c9df3b01cf.png' %}" alt="">
+                    </div>
+                    <div class="parte-two">
+                        <img src="{% static '/assets/img/Descripcion//espacio-autonomo.png' %}" alt="">
+                        <h1>
+                            En Bemarking, nos tomamos el tiempo para conocer tu negocio y tus necesidades para crear una estrategia de marketing digital personalizada. Utilizamos datos y análisis en tiempo real para ajustar nuestras estrategias y asegurarnos de que estamos obteniendo los resultados que necesitas.
+                           
+                        </h1>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="elegirnos container" id="indicador">
+                <div class="elegirnos-title">
+                    <h1>¿POR QUÉ DEBERÍA CONTRATAR A BEMARKING?</h1>
+                </div>
+                <div class="elegirnos-cajas">
+                    <div>
+                        <h1>2007</h1>
+                        <h6>Desde 2007 en el rubro</h6>
+                    </div>
+                    <div>
+                        <h1>+180</h1>
+                        <h6>Clientes activos</h6>
+                    </div>
+                    <div>
+                        <h1>100%</h1>
+                        <h6>Comentarios positivos <br>
+                            en Google Maps</h6>
+                    </div>
+                    <div>
+                        <h1>2014</h1>
+                        <h6>Google Partners desde 2014</h6>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="consultas"  class="espaciado">  
+            </section>
+
+            <section class="formulario" id="form">
+                <div class="content-form">
+
+                    <h1 class="brand">Contacta con <span>nosotros</span></h1>
+
+                    <div class="contact-wrapper">
+
+                        <div class="contact-form">
+                            <h3>Contact Us</h3>
+                            <form id="form1" action="https://formspree.io/f/mzbloadr" method="post">
+                                <p>
+                                    <label for="fullname">Nombre completo</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Ingrese su nombre" >  
+                                </p>
+                                <p>
+                                    <label>Correo electrónico</label>
+                                    <input type="email" name="email" id="correo" placeholder="Ingrese su correo electrónico" >
+                                </p>
+                                <p>
+                                    <label>Teléfono</label>
+                                    <input type="tel" name="phone" id="telefono" placeholder="Ingrese su número telefonico" >
+                                </p>
+                                <p>
+                                    <label>Localidad</label>
+                                    <input type="text" name="affair" id="localidad" placeholder="Ingrese su localidad" >
+                                </p>
+                                <p class="block">
+                                    <label>Mensaje</label>
+                                    <textarea name="message" rows="2" placeholder="Ingrese mensaje con su consulta" ></textarea>
+                                </p>
+                                <p class="block">
+                                    <button type="submit" value="Enviar">
+                                        Enviar
+                                    </button>
+                                </p>
+                            </form>
+                            <div id="error"></div>
+                        </div>
+
+                        <div class="contact-info">
+                            <h4>Más información</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> CABA, Gualeguaychú 8456</li>
+                                <li><i class="fas fa-phone"></i> +54 2262-367787</li>
+                                <li><i class="fas fa-envelope-open-text"></i> bemarking@gmail.com</li>
+                            </ul>
+                            <p class="formulario-parrafo"> En Bemarking, nos proponemos el desafío constante de llevar a cada cliente hacia lo más alto. 
+                                Desarrollamos proyectos de forma integral, abarcando cada área en conjunto para otorgar organización, seriedad y prestigio. 
+                                
+                            </p>
+                            <p>Bemarking.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="logos1">
+                <div class="logos1-carrousel">
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/1.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/2.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/3.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/4.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/5.png' %}" alt="">
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/6.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/7.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/8.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/9.png' %}" alt=""/>
+                    <img src="{% static './assets/img/Carrousel-aplicaciones/10.png' %}" alt=""/>
+                </div>
+                
+                <div class="logos1-carrousel">
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/1.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/2.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/3.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/4.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/5.png' %}" alt="">
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/6.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/7.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/8.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/9.png' %}" alt=""/>
+                    <img class="imagenes" src="{% static './assets/img/Carrousel-aplicaciones/10.png' %}" alt=""/>
+                </div>
+            </section>
+           
+            <section class="climate">
+
+                
+                    <div id="API-CLIMA">
+                    <div id="clima1">
+                        <h1 id="temperatura-valor"></h1>
+                        <h2 id="temperatura-descripcion"></h2>
+                    </div>
+                    <div id="clima2">
+                        <h2 id="ubicacion"></h2>
+                        <!--<img id="{% static 'icono-animado' %}" src="" alt="" height="128" width="128">-->
+                    </div>
+                    <div id="clima3">
+                        <h3>Veloc. del Viento</h3>
+                        <h1 id="viento-velocidad"></h1>
+                    </div>
+                </div>
+                
+                
+            </section>
+        </main>
+        <footer class="footer-distributed">
+            
+            <section class="footer-caja">
+                <div  class="footer-left">
+                    <img src="{% static 'assets/img/icono-5.png' %}" alt="">
+                    <h3>
+                        Marketing <span>Digital</span></h3>
+    
+                    <p class="footer-links">
+                            Elegí mejorar tu empresa con nosotros
+                    </p>
+                    <p class="footer-company-name">Copyright @ 2023 <strong>Bemarking</strong></p>
+                </div>
+    
+                <div class="footer-center">
+                    <div class="footer-text">
+                        <i class="{% static 'fa fa-map-marker' %}"></i>
+                        <p>CABA, Gualeguaychú 8456</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-phone"></i>
+                        <p>+54 2262-367787</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">bemarking@gmail.com</a></p>
+                    </div>
+                </div>
+    
+                <div class="footer-right">
+                    <div class="footer-company-about">
+                        <span>Sobre nuestra compañía</span>
+                        <p>Somos una agencia que se dedica de forma incansable a potenciar empresas desde todos los frentes. Creemos en edificar con compromiso cada una de las acciones que las compañías ponen en nuestras manos para potenciar sus negocios.</p>
+                    </div>
+                        
+                    <!--
+                          <div class="footer-icons">
+                        <a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ"><i class="social__icon fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/"><i class="social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nicoferreiro1/"><i class="social__icon fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/nicolas.ferreiro.79/"><i class="social__icon fa-brands fa-facebook"></i></a>
+                    </div> 
+                    -->
+                 
+                </div>
+            </section>
+
+        </footer>
+        
+        <script src="{% static 'JS/app.js' %}"></script>
+        <script type="module" src="{% static 'JS/index.js' %}"></script>
+        <script src="{% static 'JS/store.js' %}"></script>
+        <script src="{% static 'JS/preloader.js' %}"></script>
+
+    </body>
+</html>
+
+        
+{% endblock %}

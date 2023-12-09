@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bemarking</title>
+        <link rel="shortcut icon" href="{% static 'assets/img/icono.png' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="{% static 'assets/fontawesome-free-6.4.2-web/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS/1-header.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS/8-api_proyecto.css' %}">
+        <script  src="{% static 'JS/index.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="{% static 'JS/store.js' %}"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+    </head> 
+    <body class="body_store">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <main>
+            <header id="inicio" class="header1">
+                <div class="menu">
+                    <a href="#inicio" class="logo container">Bemarking</a>
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <img src="{% static 'assets/img/menu.png' %}" alt="" class="menu-icono">
+                    </label>
+                    <nav class="navbar container">
+                        <ul>
+                            <li><a href="{% url 'index' %}"  class="enlaces-menu">Inicio</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Producto</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Servicios</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Contacto</a></li>
+                            <li><a href="{% url 'index' %}" class="enlaces-menu">Empresas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="stoy">
+                <div class="store1">
+                    <h1>Empresas que &nbsp;<span id="multiple-text"></span></h1>
+                    <h2><a href="{% url 'store:create' %}">Agregar una empresa</a></h2>
+                </div>
+                <div class="list1">
+                    {% for store in store_list %}
+                        <div class="list12">
+                            <legend>Nombre: {{store.nombre}}</legend>
+                            <ul>
+                                <li>Direccion de la empresa : {{store.ubicacion}}</li>
+                                <li>Contacto : {{store.contacto}}</li>
+                                <li>Fecha de alta : {{store.fecha_habilitacion}}</li>
+                            </ul>
+                            <div>
+                                <label for="">Detalles: </label>
+                                <a href="{% url 'store:detail' store.id %}">+INFO</a>
+                            </div>
+                            <div>
+                                <label for="">Borrar: </label>
+                                <a href="{% url 'store:delete' store.id %}">+INFO</a>
+                            </div>
+                            <div>
+                                <label for="">Editar: </label>
+                                <a href="{% url 'store:update' store.id %}">+INFO</a>
+                            </div> 
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+
+        <section class="footer_store">
+            <footer class="footer-distributed">
+            
+            <section class="footer-caja">
+                <div  class="footer-left">
+                    <img src="{% static 'assets/img/icono-5.png' %}" alt="">
+                    <h3>
+                        Marketing <span>Digital</span></h3>
+    
+                    <p class="footer-links">
+                            Elegí mejorar tu empresa con nosotros
+                    </p>
+                    <p class="footer-company-name">Copyright @ 2023 <strong>Bemarking</strong></p>
+                </div>
+    
+                <div class="footer-center">
+                    <div class="footer-text">
+                        <i class="{% static 'fa fa-map-marker' %}"></i>
+                        <p>CABA, Gualeguaychú 8456</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-phone"></i>
+                        <p>+54 2262-367787</p>
+                    </div>
+    
+                    <div class="footer-text">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">bemarking@gmail.com</a></p>
+                    </div>
+                </div>
+    
+                <div class="footer-right">
+                    <div class="footer-company-about">
+                        <span>Sobre nuestra compañía</span>
+                        <p>Somos una agencia que se dedica de forma incansable a potenciar empresas desde todos los frentes. Creemos en edificar con compromiso cada una de las acciones que las compañías ponen en nuestras manos para potenciar sus negocios.</p>
+                    </div>
+                        
+                    <!--
+                          <div class="footer-icons">
+                        <a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ"><i class="social__icon fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/"><i class="social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nicoferreiro1/"><i class="social__icon fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/nicolas.ferreiro.79/"><i class="social__icon fa-brands fa-facebook"></i></a>
+                    </div> 
+                    -->
+                 
+                </div>
+            </section>
+
+        </footer>
+        </section>
+        <script src="{% static 'JS/preloader.js' %}"></script>
+    </body>
+</html>
+
+{% endblock %}

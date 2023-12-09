@@ -1,0 +1,510 @@
+@import url(/CSS/2-producto-slider.css);
+
+.tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.contanador{
+    position: relative;
+    display: flex;
+    padding: 80px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 1400px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),url(/bemarking/static/assets/img/Servicios/abstract-geometric-square-grey-with-line-on-white-background-technology-concept-free-vector.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background-color: #000;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.card:hover{
+    height: 450px;
+}
+
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.9)
+    )
+    ,url(/assets/img/Servicios/fondo-blanco-lineas-puntos-que-dicen-conectado_890721-168.avif);
+    background-size: cover;
+
+}
+
+.card .imgBx{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #000000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .imgBx{
+    top: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.card .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .imgBx::before{
+    animation-play-state: running;
+}
+
+@keyframes animate2
+{
+    0%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+
+.card .imgBx::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.7)
+    )
+    ,url(/assets/img/Servicios/fondo-blanco-lineas-puntos-que-dicen-conectado_890721-168.avif);
+    background-size: cover;
+}
+
+.card .imgBx img{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+    background-size: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(146px);
+}
+
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+
+.card .content .details h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details p{
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    border-radius: 30px;
+}
+
+
+.card .content .details a{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #FFB500;
+    color: black;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .content .details p,
+.card:hover .content .details a
+{
+    opacity: 1;
+}
+
+
+/*CARTA UNO*/
+
+.card .lines1{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines1::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines1::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines1::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/Estrategias2.png);
+    background-size: cover;
+
+}
+
+/*CARTA DOS*/
+
+.card .lines2{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines2::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines2::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines2::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/Seo2.jpg);
+    background-size: cover;
+}
+
+/*CARTA TRES*/
+
+.card .lines3{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines3::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines3::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines3::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/Adwords2.jpg);
+    background-size: cover;
+}
+/*CARTA CUATRO*/
+
+.card .lines4{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines4::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines4::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines4::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/Audiovisual2.png);
+    background-size: cover;
+}
+/*CARTA CINCO*/
+
+.card .lines5{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines5::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines5::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines5::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/Diseno\ grafico2.png);
+    background-size: cover;
+}
+/*CARTA SEIS*/
+
+.card .lines6{
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines6::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #FFB500,  #FFB500,  #FFB500, transparent);
+    animation: animate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines6::before{
+    animation-play-state: running;
+}
+
+
+
+@keyframes animate{
+    0%{ 
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines6::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.8)
+    )
+    ,url(/assets/img/Servicios/desarrollo-web2.png);
+    background-size: cover;
+}
+
+@media(max-width:349px){
+    .tarjetas{
+        display: none;
+    }
+}
+

@@ -1,0 +1,68 @@
+@import url('/static/CSS/5-consultas.css');
+
+@keyframes sliderino{
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.logos1{
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos1::before,
+.logos1::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos1::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.logos1::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+.logos1-carrousel{
+    display: inline-block;
+    animation: 35s sliderino infinite linear;
+}
+
+.logos1-carrousel img{
+    height: 85px;
+}
+
+@media(max-width: 1630px) {
+    .imagenes{
+        display: none;
+    }
+}
+
+@media(max-width: 640px) {
+    .logos1::before {
+        left: 0;
+        background: none;
+    }
+    
+    .logos1::after {
+        right: 0;
+        background: none;
+    }
+    
+}
+

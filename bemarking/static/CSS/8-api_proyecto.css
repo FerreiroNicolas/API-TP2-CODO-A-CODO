@@ -305,37 +305,37 @@ body.loaded #preloader {
     font-size: 45px;
 }
 
-.store1 .store_texto1 {
+.store_texto1 {
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-.store1 .store_texto1 p {
+.store_texto1 p {
     font-size: 1.2em;
     color: #333; 
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.store1 .store_texto1 h2 {
+.store_texto1 h2 {
     color: #f39c12; 
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.store1 .store_texto1 ul {
+.store_texto1 ul {
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
     text-align: justify;
 }
 
-.store1 .store_texto1 li {
+.store_texto1 li {
     margin-bottom: 8px;
     position: relative;
 }
 
-.store1 .store_texto1 li:before {
+.store_texto1 li:before {
     content: "\203A"; /* Símbolo de chevron › */
     color: #f39c12; 
     font-weight: bold;
@@ -345,18 +345,18 @@ body.loaded #preloader {
     position: absolute;
 }
 
-.store1 .store_texto1 strong {
+.store_texto1 strong {
     color: #f39c12; 
 }
 
-.store1 .store_texto1 a {
+.store_texto1 a {
     color: #3498db; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.store1 .store_texto1 a:hover {
+.store_texto1 a:hover {
     color: #e74c3c; 
 }
 

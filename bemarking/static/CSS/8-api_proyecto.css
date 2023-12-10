@@ -336,7 +336,7 @@ body.loaded #preloader {
 }
 
 .store_texto li:before {
-    content: "\203A"; 
+    content: "\203A"; /* Símbolo de chevron › */
     color: #f39c12; 
     font-weight: bold;
     display: inline-block;

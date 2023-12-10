@@ -12,11 +12,11 @@
 
 ### Integrantes:
 
+   + Alfredo Guajardo
+   + Gabriel Jesus Luque Poleo
    + Nicolas Ferreiro
    + ~~Graciela M. Richetta~~
    + ~~Eduardo Miguel Alvarez~~
-   + Alfredo Guajardo
-   + Gabriel Luque
 
 ***
 

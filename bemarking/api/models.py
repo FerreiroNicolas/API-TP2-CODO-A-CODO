@@ -8,11 +8,11 @@ class Store(Model):
     Atributos de clase que son usadas por herencia de la clase Model
 
     """
-    nombre  =  models.CharField(max_length=100, default="Tienda X")
+    nombre  =  models.CharField(max_length=100, default="Coloque nombre de la empresa")
     contacto  = models.EmailField(
-        blank=False, null=False, default="no_email_contact@gmail.com"
+        blank=False, null=False, default="Coloque gmail de contacto"
         )
-    ubicacion  = models.CharField(max_length=150, blank=True, null=True)
+    ubicacion  = models.CharField(max_length=150, blank=True, null=True, default="Coloque ubicacion de la empresa")
     fecha_habilitacion =models.DateField(auto_now=True)
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos

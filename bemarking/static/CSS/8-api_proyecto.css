@@ -289,11 +289,6 @@ body.loaded #preloader {
     display: none;
 }
 
-#multiple-text{
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-}
 
 .store_texto1 {
     margin-top: 20px;
@@ -348,6 +343,10 @@ body.loaded #preloader {
 
 .store_texto1 a:hover {
     color: #e74c3c; 
+}
+
+#multiple-text{
+    font-size: 1em;
 }
 
 .store1 h1 {

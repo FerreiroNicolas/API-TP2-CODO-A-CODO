@@ -259,6 +259,10 @@
 
 /* tu-archivo-de-estilo.css */
 
+#multiple-text {
+    font-size: 2em !important;
+}
+
 
 .footer_store{
     margin-top: 100px;
@@ -349,28 +353,4 @@ body.loaded #preloader {
 
 .store_texto1 a:hover {
     color: #e74c3c; 
-}
-
-@media only screen and (max-width: 710px) {
-    .store1 h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .store1 h1 {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .store1 h1 {
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 362px) {
-    .store1 h1 {
-        font-size: 0.8em;
-    }
 }

@@ -38,10 +38,10 @@
     margin: 0 auto;
 }
 
-.store1 h1 {
+.stoy .store1 h1 {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 45px;
     border-bottom: 2px solid #FFB500;
     margin-bottom: 30px;
     color: #000000; 
@@ -259,7 +259,9 @@
 
 /* tu-archivo-de-estilo.css */
 
-
+#multiple-text {
+    font-size: 45px !important;
+}
 
 
 .footer_store{
@@ -298,41 +300,43 @@ body.loaded #preloader {
     display: none;
 }
 
+#multiple-text {
+    font-size: 45px;
+}
 
-
-.store_texto {
+.store_texto1 {
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-.store_texto p {
+.store_texto1 p {
     font-size: 1.2em;
-    color: #333; /* Texto oscuro para un fondo claro */
+    color: #333; 
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.store_texto h2 {
-    color: #f39c12; /* Naranja oscuro */
+.store_texto1 h2 {
+    color: #f39c12; 
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.store_texto ul {
+.store_texto1 ul {
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
     text-align: justify;
 }
 
-.store_texto li {
+.store_texto1 li {
     margin-bottom: 8px;
     position: relative;
 }
 
-.store_texto li:before {
+.store_texto1 li:before {
     content: "\203A"; /* Símbolo de chevron › */
-    color: #f39c12; /* Naranja oscuro para el marcador */
+    color: #f39c12; 
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -340,42 +344,17 @@ body.loaded #preloader {
     position: absolute;
 }
 
-.store_texto strong {
-    color: #f39c12; /* Naranja oscuro */
+.store_texto1 strong {
+    color: #f39c12; 
 }
 
-.store_texto a {
-    color: #3498db; /* Azul brillante para los enlaces */
+.store_texto1 a {
+    color: #3498db; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.store_texto a:hover {
-    color: #e74c3c; /* Rojo oscuro al pasar el ratón sobre el enlace */
-}
-
-
-@media only screen and (max-width: 710px) {
-    .store1 h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    .store1 h1 {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .store1 h1 {
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 362px) {
-    .store1 h1 {
-        font-size: 0.8em;
-    }
+.store_texto1 a:hover {
+    color: #e74c3c; 
 }

@@ -41,7 +41,7 @@
 .stoy .store1 h1 {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 45px;
     border-bottom: 2px solid #FFB500;
     margin-bottom: 30px;
     color: #000000; 
@@ -259,8 +259,8 @@
 
 /* tu-archivo-de-estilo.css */
 
-#multiple-text {
-    font-size: 2em !important;
+.store1 span #multiple-text {
+    font-size: 45px !important;
 }
 
 

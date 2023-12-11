@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="{% static 'assets/fontawesome-free-6.4.2-web/css/all.min.css' %}">
         <link rel="stylesheet" href="{% static 'CSS/1-header.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/2-producto-slider.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/3-servicios.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/4-descripcion.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/5-consultas.css' %}">
+        <link rel="stylesheet" href="{% static '/CSS/6-carrousel-aplicaciones.css' %}">
+        <link rel="stylesheet" href="{% static './CSS/7-footer.css' %}">
         <link rel="stylesheet" href="{% static 'CSS/8-api_proyecto.css' %}">
         <script  src="{% static 'JS/index.js' %}"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
@@ -26,7 +32,7 @@
         <main>
             <header id="inicio" class="header1">
                 <div class="menu">
-                    <a href="#inicio" class="logo container">Bemarking</a>
+                    <a href="{% url 'index' %}" class="logo container">Bemarking</a>
                     <input type="checkbox" id="menu">
                     <label for="menu">
                         <img src="{% static 'assets/img/menu.png' %}" alt="" class="menu-icono">
@@ -45,7 +51,7 @@
             <section class="stoy">
                 <div class="store1">
                     <h1>Empresas que &nbsp;<span id="multiple-text"></span></h1>
-                    <div class="store_texto">
+                    <div class="store_texto1">
                         <p>En el dinámico mundo de los negocios, la presencia en línea y las estrategias de marketing digital son cruciales para el éxito continuo de cualquier empresa. En Bemarking, entendemos la importancia de destacar en el vasto paisaje digital y nos enorgullece ofrecer soluciones integrales que impulsan la visibilidad y el crecimiento de las empresas.</p>
     
                         <h2>¿Por qué elegir Bemarking?</h2>
@@ -57,11 +63,7 @@
                             <li><strong>Resultados Medibles:</strong> Creemos en la transparencia y la rendición de cuentas, implementando herramientas analíticas avanzadas.</li>
                             <li><strong>Colaboración a Largo Plazo:</strong> Estamos comprometidos a construir relaciones sólidas y a largo plazo con nuestros clientes.</li>
                         </ul>
-
-                        
-
                     </div>
-
 
 
                     <h2><a href="{% url 'store:create' %}">Agregar una empresa</a></h2>
@@ -110,7 +112,7 @@
     
                 <div class="footer-center">
                     <div class="footer-text">
-                        <i class="{% static 'fa fa-map-marker' %}"></i>
+                        <i class="fa fa-map-marker"></i>
                         <p>CABA, Gualeguaychú 8456</p>
                     </div>
     

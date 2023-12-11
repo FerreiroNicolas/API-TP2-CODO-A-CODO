@@ -37,6 +37,7 @@
 .store1 {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -49,9 +50,6 @@
     padding: 20px;
 }
 
-.store1 {
-    text-align: center;
-}
 
 .list1 {
     display: flex;
@@ -346,7 +344,7 @@ body.loaded #preloader {
 }
 
 #multiple-text{
-    font-size: 1em;
+    font-size: 10px;
 }
 
 .store1 h1 {

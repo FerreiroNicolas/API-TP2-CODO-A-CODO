@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Verifica si estamos en un dispositivo móvil
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    // Si no estamos en un dispositivo móvil, inicializa Typed
+
     if (!isMobile) {
         var script = document.createElement('script');
         script.src = 'https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js';

@@ -39,10 +39,10 @@
     margin: 0 auto;
 }
 
-.stoy .store1 h1 {
+.store1 h1 {
     display: flex;
     justify-content: center;
-    font-size: 45px;
+    font-size: 2em;
     border-bottom: 2px solid #FFB500;
     margin-bottom: 30px;
     color: #000000; 
@@ -360,3 +360,26 @@ body.loaded #preloader {
     color: #e74c3c; 
 }
 
+@media only screen and (max-width: 710px) {
+    .store1 h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .store1 h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .store1 h1 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 362px) {
+    .store1 h1 {
+        font-size: 0.8em;
+    }
+}
